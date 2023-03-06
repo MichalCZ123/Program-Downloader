@@ -1,5 +1,38 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCmDJEmW+0UiKRZHcDSQM2yoB7hczOfs4eaIo0kYRt42e4Dn07eBbukQ5SU=
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCmDJEmW+0UiKRZHcDSQM2yoB7hczOfs4eaIo0kYRt46YIrn6qaBJ/IS5wXAeoEj2nVbnM4eTFNOL1z6J0ExsWsi
+::YB416Ek+ZG8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
-title Program Downloader (v1.0)
+title Program Downloader (v1.1)
 
 :DOWNLOAD
 cls
@@ -7,6 +40,7 @@ cls
 @echo.
 @echo.
 set /p name="Napis zde jmeno programu.(napr. totalcmd): "
+:: v1.0
 if %name% == totalcmd goto TOTALCMD
 if %name% == 7-zip goto 7ZIP
 if %name% == winrar goto WINRAR
@@ -43,8 +77,28 @@ if %name% == rufus goto RFS
 if %name% == recuva goto RECUVA
 if %name% == aida goto AIDA
 if %name% == bluestacks goto BLSTCKS
+:: v1.1
+if %name% == directx goto DX
+if %name% == anydesk goto ANYDSK
+if %name% == teamviewer goto TMVWR
+if %name% == seznam_browser goto SB
+if %name% == libreoffice goto LBROFC
+if %name% == .net_framework4.8 goto .NET4.8
+if %name% == .net_framework6.0 goto .NET6.0
+if %name% == thunderbird goto TNDRBRD
+if %name% == win10mediacreationtool goto 10MCT
+if %name% == jre8 goto J8
+if %name% == whatsapp goto WA
+if %name% == pspad goto PSP
+if %name% == hamachi goto HMCH
+if %name% == filezilla goto FLZLL
+if %name% == virtualbox goto VBOX
+if %name% == powerdvd goto PDVD
+if %name% == daemontools goto DMTLS
+if %name% == virtualclonedrive goto VCD
 goto DOWNLOAD
 
+:: v1.0
 :TOTALCMD
 cls
 @echo Stahuji, prosim pockejte...
@@ -294,5 +348,132 @@ goto DOWNLOAD
 cls
 @echo Stahuji, prosim pockejte...
 start https://cdn3.bluestacks.com/downloads/windows/nxt/5.11.1.1002/a7fc42682e92780335ddcabe6fd9b6e8/BlueStacksMicroInstaller_5.11.1.1002_native.exe?filename=BlueStacksInstaller_5.11.1.1002_native_967e34acb2ecf1db104464ded144f732_MzsxNSwwOzUsMTsxNSw0OzE1.exe
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:: v1.1
+:DX
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/direct-x/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:ANYDSK
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/anydesk-download/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:TMVWR
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/teamviewer/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:SB
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/seznam-prohlizec/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:LBROFC
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/libreoffice/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:.NET4.8
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/net-framework/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:.NET6.0
+cls
+@echo Stahuji, prosim pockejte...
+start https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:TNDRBRD
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/thunderbird/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:10MCT
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/windows-10-pro-64-bit-cz/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:J8
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/java-2-runtime-environment/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:WA
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/whatsapp/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:PSP
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/editor-pspad/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:HMCH
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/hamachi/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:FLZLL
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/filezilla/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:VBOX
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/virtualbox/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:PDVD
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/powerdvd/download
+timeout /t 4 /nobreak > nul
+goto DOWNLOAD
+
+:DMTLS
+cls
+@echo Stahuji, prosim pockejte...
+start https://www.instaluj.cz/daemon-tools-pro/download
+timeout /t 4 /nobreak
+goto DOWNLOAD
+
+:VCD
+cls
+@echo Stahuji, prosim pockejte
+start https://www.instaluj.cz/virtual-clonedrive/download
 timeout /t 4 /nobreak > nul
 goto DOWNLOAD
